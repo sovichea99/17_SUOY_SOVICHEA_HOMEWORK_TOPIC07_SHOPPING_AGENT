@@ -1,4 +1,4 @@
-# Simple Safe Shopping Agent
+# Shopping Agent
 
 A small agentic application for **Topic 07 — Autonomous Agents & Tool Integration**.
 
@@ -6,7 +6,7 @@ The project demonstrates a simple shopping agent that can receive a user request
 
 The project focuses on the **required/basic homework requirements**:
 - Simple agent loop
-- At least 2 tools
+- 4 tools
 - Tool implementations and input schemas
 - Application-level permission control
 - Basic input validation
