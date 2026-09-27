@@ -152,7 +152,7 @@ check_stock(product_id=1)
         ↓
 
 Tool Result:
-MacBook Air M1 has 5 units in stock.
+{'success': True, 'product_id': 1, 'product_name': 'MacBook Air M1', 'stock': 5}
 
         ↓
 
@@ -161,7 +161,7 @@ Final answer
 
         ↓
 
-"The MacBook Air M1 is in stock (5 units, $700)."
+"Product MacBook Air M1 has 5 units in stock."
 ```
 
 The important part is that the result of the first tool call is used by the agent to decide whether another tool call is needed.
