@@ -19,7 +19,7 @@ Product data is stored in a simple in-memory Python list. No database is require
 
 ## 1. Project Overview
 
-The **Simple Safe Shopping Agent** is a shopping assistant powered by a local LLM through **Ollama**.
+The **Shopping Agent** is a shopping assistant powered by a local LLM through **Ollama**.
 
 A user can log in as either:
 
