@@ -116,6 +116,7 @@ def run_agent(
             "INVALID_ARGUMENTS",
             "PERMISSION_DENIED",
             "INSUFFICIENT_STOCK",
+            "UNKNOWN_TOOL",
         }:
             return {"answer": result["message"]}
         

@@ -53,9 +53,14 @@ def execute_tool(role: str, tool_name: str, arguments: dict, tools: dict) -> dic
         for validation_error in error.errors():
             field_name = validation_error["loc"][0]
             field = schema.model_fields.get(field_name)
-            message = field.description if field and field.description else validation_error["msg"]
+            if validation_error["type"] == "missing":
+                message = f"'{field_name}' is required."
+            elif field and field.description:
+                message = field.description
+            else:
+                message = validation_error["msg"
+                                           ]
             validation_messages.append(message)
-
         return {
             "success": False,
             "error": "INVALID_ARGUMENTS",
